@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Easy Web Page</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    header {
+      background: #333;
+      color: white;
+      padding: 1rem;
+      width: 100%;
+      text-align: center;
+    }
+    main {
+      padding: 2rem;
+      text-align: center;
+    }
+    button {
+      padding: 0.5rem 1rem;
+      font-size: 1rem;
+      cursor: pointer;
+      background: #007bff;
+      color: white;
+      border: none;
+      border-radius: 5px;
+    }
+    button:hover {
+      background: #0056b3;
+    }
+    #output {
+      margin-top: 1rem;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>My Easy Web Page</h1>
+  </header>
+  <main>
+    <p>Click the button to see some magic!</p>
+    <button onclick="showMessage()">Click Me</button>
+    <div id="output"></div>
+  </main>
+  <script>
+    function showMessage() {
+      document.getElementById('output').textContent = '🎉 Hello from JavaScript!';
+    }
+  </script>
+</body>
+</html>
